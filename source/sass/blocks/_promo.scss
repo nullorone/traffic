@@ -1,0 +1,131 @@
+.promo {
+  padding-top: 33px;
+  text-align: center;
+
+  @media (min-width: $md) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 79px;
+    text-align: left;
+  }
+
+  @media (min-width: $xl) {
+    padding-top: 102px;
+  }
+}
+
+.promo__type {
+  display: block;
+  color: $orange;
+  text-shadow: $orange-text-shadow;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.promo__title {
+  margin: 0;
+  padding: 0 5px;
+  padding-top: 10px;
+
+  @include h2-style;
+
+  @media (min-width: $md) {
+    max-width: 425px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 590px;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 2px;
+  }
+
+  & span {
+    @include h2-style;
+
+    @media (min-width: $md) {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 1.4px;
+    }
+  }
+}
+
+.promo__descr {
+  margin: 0;
+  padding-top: 13px;
+
+  @include text-style;
+
+  @media (min-width: $md) {
+    max-width: 320px;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 360px;
+    padding-top: 20px;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+}
+
+.promo__img-wrapper {
+  position: relative;
+
+  @media (min-width: $md) {
+    position: absolute;
+    top: 88px;
+    right: -38px;
+  }
+
+  @media (min-width: $xl) {
+    top: 13px;
+    right: -76px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+    height: 369px;
+    background-image: url("../img/bg-rings-header-xs.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+
+    @media (min-width: $md) {
+      width: 516px;
+      height: 507px;
+      top: -30px;
+      transform: translate(-53%, -14%);
+      background-image: url("../img/bg-rings-header-md.png");
+    }
+
+    @media (min-width: $xl) {
+      width: 859px;
+      height: 844px;
+      top: -40px;
+      background-image: url("../img/bg-rings-header-xl.png");
+    }
+  }
+}
+
+.promo__img {
+  display: block;
+  margin-left: 42px;
+
+  @media (min-width: $md) {
+    margin-left: 0;
+  }
+}
+

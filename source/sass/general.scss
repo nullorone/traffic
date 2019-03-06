@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: $white;
+  background-color: $dark-blue;
+
+  @include text-style;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $white;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 15px;
+}

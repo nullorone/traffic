@@ -1,0 +1,18 @@
+@mixin text-style($line-height: $global-line-height) {
+  color: $light-white;
+  font-family: $global-font-family;
+  font-size: $global-font-size;
+  font-weight: $global-font-weight;
+  line-height: $line-height;
+  letter-spacing: 0.8px;
+}
+
+@mixin h2-style($line-height: $h2-line-height) {
+  color: $white;
+  font-family: $global-font-family;
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+  line-height: $line-height;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,34 @@
+.header {
+  padding-top: 33px;
+  overflow-x: hidden;
+
+  @media (min-width: $md) {
+    padding-top: 63px;
+    padding-bottom: 110px;
+  }
+
+  @media (min-width: $xl) {
+    padding-bottom: 255px;
+  }
+
+  @media (min-width: 1280px) {
+    // overflow-x: inherit;
+  }
+}
+
+.header__container {
+  @media (min-width: $md) {
+    position: relative;
+  }
+}
+
+.header__link {
+  display: inline-block;
+  font-size: 0;
+}
+
+.header__img {
+  display: block;
+  width: 109px;
+  height: 30px;
+}

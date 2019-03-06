@@ -364,8 +364,282 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url("../fonts/roboto-light.woff2") format("woff2"), url("../fonts/roboto-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff"); }
+
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #0b1119;
+  color: #bdbdbd;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.8px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: #ffffff; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden; }
+
+.container {
+  padding: 0 15px; }
+
+.header {
+  padding-top: 33px;
+  overflow-x: hidden; }
+  @media (min-width: 750px) {
+    .header {
+      padding-top: 63px;
+      padding-bottom: 110px; } }
+  @media (min-width: 1170px) {
+    .header {
+      padding-bottom: 255px; } }
+
+@media (min-width: 750px) {
+  .header__container {
+    position: relative; } }
+
+.header__link {
+  display: inline-block;
+  font-size: 0; }
+
+.header__img {
+  display: block;
+  width: 109px;
+  height: 30px; }
+
+.promo {
+  padding-top: 33px;
+  text-align: center; }
+  @media (min-width: 750px) {
+    .promo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-top: 79px;
+      text-align: left; } }
+  @media (min-width: 1170px) {
+    .promo {
+      padding-top: 102px; } }
+
+.promo__type {
+  display: block;
+  color: #f99406;
+  text-shadow: 0 3px 27px rgba(249, 148, 6, 0.59);
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px; }
+
+.promo__title {
+  margin: 0;
+  padding: 0 5px;
+  padding-top: 10px;
+  color: #ffffff;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+  @media (min-width: 750px) {
+    .promo__title {
+      max-width: 425px;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 1.4px; } }
+  @media (min-width: 1170px) {
+    .promo__title {
+      max-width: 590px;
+      font-size: 40px;
+      line-height: 52px;
+      letter-spacing: 2px; } }
+  .promo__title span {
+    color: #ffffff;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+    @media (min-width: 750px) {
+      .promo__title span {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 1.4px; } }
+
+.promo__descr {
+  margin: 0;
+  padding-top: 13px;
+  color: #bdbdbd;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.8px; }
+  @media (min-width: 750px) {
+    .promo__descr {
+      max-width: 320px; } }
+  @media (min-width: 1170px) {
+    .promo__descr {
+      max-width: 360px;
+      padding-top: 20px;
+      font-size: 18px;
+      letter-spacing: 0.9px; } }
+
+.promo__img-wrapper {
+  position: relative; }
+  @media (min-width: 750px) {
+    .promo__img-wrapper {
+      position: absolute;
+      top: 88px;
+      right: -38px; } }
+  @media (min-width: 1170px) {
+    .promo__img-wrapper {
+      top: 13px;
+      right: -76px; } }
+  .promo__img-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 375px;
+    height: 369px;
+    background-image: url("../img/bg-rings-header-xs.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1; }
+    @media (min-width: 750px) {
+      .promo__img-wrapper::before {
+        width: 516px;
+        height: 507px;
+        top: -30px;
+        -webkit-transform: translate(-53%, -14%);
+                transform: translate(-53%, -14%);
+        background-image: url("../img/bg-rings-header-md.png"); } }
+    @media (min-width: 1170px) {
+      .promo__img-wrapper::before {
+        width: 859px;
+        height: 844px;
+        top: -40px;
+        background-image: url("../img/bg-rings-header-xl.png"); } }
+
+.promo__img {
+  display: block;
+  margin-left: 42px; }
+  @media (min-width: 750px) {
+    .promo__img {
+      margin-left: 0; } }
+
+.promo-form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 32px; }
+  @media (min-width: 750px) {
+    .promo-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      margin-top: 50px; } }
+  @media (min-width: 1170px) {
+    .promo-form {
+      margin-top: 63px; } }
+
+.promo-form__label {
+  font-size: 0; }
+
+.promo-form__input {
+  color: #000000;
+  width: 100%;
+  height: 45px;
+  padding: 15px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  border: none; }
+  .promo-form__input::-webkit-input-placeholder {
+    color: #afafaf; }
+  .promo-form__input:-ms-input-placeholder {
+    color: #afafaf; }
+  .promo-form__input::-ms-input-placeholder {
+    color: #afafaf; }
+  .promo-form__input::placeholder {
+    color: #afafaf; }
+  @media (min-width: 750px) {
+    .promo-form__input {
+      width: 212px;
+      height: 54px;
+      text-align: left;
+      padding-left: 27px; } }
+  @media (min-width: 1170px) {
+    .promo-form__input {
+      width: 373px; } }
+
+.promo-form__submit {
+  width: 100%;
+  color: #ffffff;
+  padding: 0;
+  background-color: #f99406;
+  font-size: 14px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: 300;
+  line-height: 45px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  border: none; }
+  @media (min-width: 750px) {
+    .promo-form__submit {
+      width: 196px;
+      line-height: 54px; } }
