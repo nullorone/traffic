@@ -1,6 +1,10 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "general";
 
+// Blocks
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/promo-form";
