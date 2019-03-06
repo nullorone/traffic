@@ -97,7 +97,7 @@ gulp.task("imagemin", function() {
 
 gulp.task("webp", function() {
   return gulp
-    .src("source/img/*.jpg")
+    .src("source/img/*.{jpg,png}")
     .pipe(webp())
     .pipe(gulp.dest("build/img"));
 });
