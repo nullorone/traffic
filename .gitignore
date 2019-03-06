@@ -1,2 +1,15 @@
-node_modules
-build/
+.DS_Store
+.idea
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+npm-debug.*
+build/**
+source/img/preview/
+source/pixel-glass/
+source/css/*.css
+Thumbs.db
