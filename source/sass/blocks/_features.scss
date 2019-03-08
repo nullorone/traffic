@@ -1,0 +1,142 @@
+.features {
+  padding-top: 64px;
+
+  @media (min-width: $md) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: $xl) {
+    margin-top: -35px;
+    padding-top: 0;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $md) {
+    display: flex;
+  }
+}
+
+.features__item {
+  text-align: center;
+
+  @media (min-width: $md) {
+    width: 190px;
+    text-align: left;
+  }
+
+  @media (min-width: $xl) {
+    position: relative;
+    width: 365px;
+    padding-left: 150px;
+  }
+
+  &::before {
+    @media (min-width: $xl) {
+      content: "";
+      position: absolute;
+      top: 104px;
+      left: 0;
+      width: 111px;
+      height: 2px;
+      background-color: #242930;
+    }
+  }
+
+  &:not(:first-child) {
+    margin-top: 50px;
+
+    @media (min-width: $md) {
+      margin-top: 0;
+      margin-left: 62px;
+    }
+
+    @media (min-width: $xl) {
+      margin-left: 30px;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $xl) {
+      width: 305px;
+      padding-left: 111px;
+    }
+
+    &::before {
+      @media (min-width: $xl) {
+        width: 79px;
+      }
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $xl) {
+      width: 440px;
+      margin-left: 20px;
+      padding-right: 120px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 104px;
+      right: 0;
+      width: 90px;
+      height: 2px;
+      background-color: #242930;
+    }
+  }
+}
+
+.features__title {
+  margin: 0;
+  margin-top: 28px;
+  font-size: $global-font-size;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+
+  @media (min-width: $xl) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+
+  &--last-item {
+    @media (min-width: $md) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.features__descr {
+  max-width: 185px;
+  margin: 0 auto;
+  margin-top: 18px;
+  color: $light-white;
+  font-size: $global-font-size;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+
+  @media (min-width: $md) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+
+  &--last-item {
+    max-width: 155px;
+
+    @media (min-width: $md) {
+      margin: 0;
+      margin-top: 18px;
+    }
+  }
+}
