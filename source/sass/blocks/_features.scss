@@ -81,13 +81,15 @@
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      top: 104px;
-      right: 0;
-      width: 90px;
-      height: 2px;
-      background-color: #242930;
+      @media (min-width: $xl) {
+        content: "";
+        position: absolute;
+        top: 104px;
+        right: 0;
+        width: 90px;
+        height: 2px;
+        background-color: #242930;
+      }
     }
   }
 }
