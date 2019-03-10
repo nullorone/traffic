@@ -1,0 +1,30 @@
+.footer {
+  padding: 25px 0;
+  background-color: #080d13;
+  text-align: center;
+
+  @media (min-width: $md) {
+    padding-top: 31px;
+    padding-bottom: 27px;
+    text-align: left;
+  }
+}
+
+.footer__title {
+  color: $light-white;
+  font-size: 12px;
+  font-weight: $global-font-weight;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+
+  @media (min-width: $md) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+  }
+
+  & span {
+    color: $orange;
+    text-transform: uppercase;
+  }
+}
