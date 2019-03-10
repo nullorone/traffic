@@ -1,0 +1,89 @@
+.offer {
+  padding-top: 86px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-image: url("../img/bg-rings-xs.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @media (min-width: $md) {
+    padding-top: 70px;
+    padding-bottom: 172px;
+    background-image: url("../img/bg-rings-md.png");
+  }
+
+  @media (min-width: $xl) {
+    padding-top: 155px;
+    padding-bottom: 240px;
+    background-image: url("../img/bg-rings-xl.png");
+  }
+}
+
+.offer__title {
+  margin: 0;
+
+  @include h2-style;
+
+  @media (min-width: $md) {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 2px;
+  }
+}
+
+.offer__subtitle {
+  @include text-style;
+  margin: 0;
+  margin-top: 12px;
+  color: $orange;
+  text-shadow: $orange-text-shadow;
+  text-transform: uppercase;
+
+  @media (min-width: $xl) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+}
+
+.offer__descr {
+  position: relative;
+  margin: 0;
+  margin-top: 36px;
+
+  @include text-style;
+
+  @media (min-width: $md) {
+    margin-top: 70px;
+  }
+
+  @media (min-width: $xl) {
+    margin-top: 80px;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 2px;
+    background-color: #242930;
+  }
+}
+
+.offer__form {
+  margin-top: 42px;
+
+  @media (min-width: $md) {
+    margin: 45px auto 0;
+  }
+}

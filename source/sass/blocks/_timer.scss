@@ -1,0 +1,85 @@
+.timer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 7px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $md) {
+    margin-top: 40px;
+  }
+}
+
+.timer__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 65px;
+  margin-right: 8px;
+
+  @media (min-width: $md) {
+    width: 120px;
+    margin-right: 17px;
+  }
+
+  &::after {
+    content: ":";
+    position: absolute;
+    top: 0;
+    right: -11px;
+    color: rgba($white, 0.1);
+    font-size: 33px;
+    line-height: 33px;
+    font-weight: $h2-font-weight;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    @media (min-width: $md) {
+      font-size: 60px;
+      line-height: 60px;
+      right: -18px;
+    }
+  }
+
+  &:last-child::after {
+    content: "";
+  }
+}
+
+.timer__input {
+  padding-bottom: 5px;
+  color: $white;
+  font-family: $global-font-family;
+  font-size: 32px;
+  font-weight: $h2-font-weight;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2.94px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $white;
+
+  @media (min-width: $md) {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 3px;
+  }
+
+  &--blocked {
+    color: rgba($white, 0.1);
+  }
+}
+
+.timer__label {
+  margin-top: 10px;
+  color: $light-white;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 1.1px;
+
+  @media (min-width: $md) {
+    margin-top: 12px;
+  }
+}

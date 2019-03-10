@@ -46,6 +46,12 @@
   @media (min-width: $xl) {
     width: 373px;
   }
+
+  &--offer {
+    @media (min-width: $md) {
+      width: 373px;
+    }
+  }
 }
 
 .promo-form__submit {
