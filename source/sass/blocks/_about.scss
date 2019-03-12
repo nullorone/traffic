@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $xl) {
-    padding-top: 130px;
+    padding-top: 144px;
   }
 }
 
@@ -22,7 +22,8 @@
   @media (min-width: $md) {
     width: 579px;
     min-height: 494px;
-    margin-left: 140px;
+    margin-left: 19.3%;
+    padding-top: 115px;
     padding-left: 170px;
     text-align: left;
   }
@@ -31,6 +32,7 @@
     width: 734px;
     min-height: 600px;
     margin-left: 293px;
+    padding-top: 142px;
     padding-left: 263px;
   }
 
@@ -59,16 +61,16 @@
   @media (min-width: $md) {
     width: 284px;
     height: 366px;
-    top: 58px;
-    left: -141px;
+    top: 55px;
+    left: -143px;
     transform: none;
   }
 
   @media (min-width: $xl) {
     width: 369px;
     height: 476px;
-    top: 63px;
-    left: -182px;
+    top: 60px;
+    left: -184px;
   }
 }
 
@@ -113,14 +115,15 @@
 
     @media (min-width: $xl) {
       width: 400px;
-      left: -141px;
+      top: -4px;
+      left: -190px;
     }
   }
 }
 
 .about__descr {
   margin: 0;
-  margin-top: 36px;
+  margin-top: 35px;
   color: $light-white;
   letter-spacing: 0.8px;
 
@@ -131,6 +134,7 @@
 
   @media (min-width: $xl) {
     max-width: 390px;
+    margin-top: 50px;
     font-size: 18px;
     letter-spacing: 0.9px;
   }
@@ -142,7 +146,12 @@
     letter-spacing: 1.4px;
 
     @media (min-width: $md) {
-      margin-top: 40px;
+      margin-top: 35px;
+      max-width: 250px;
+    }
+
+    @media (min-width: $xl) {
+      margin-top: 24px;
     }
   }
 }

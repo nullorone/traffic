@@ -11,7 +11,6 @@ html {
 
 body {
   min-width: 320px;
-  max-width: 1170px;
   margin: 0 auto;
   color: $white;
   background-color: $dark-blue;
@@ -41,6 +40,13 @@ a {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .container {
+  max-width: 1170px;
+  margin: 0 auto;
   padding: 0 15px;
 }

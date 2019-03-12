@@ -1,13 +1,18 @@
 .questions {
   position: relative;
-  padding-top: 133px;
+  padding-top: 127px;
+  padding-left: 5px;
 
   @media (min-width: $md) {
-    padding-top: 152px;
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 147px;
+    padding-left: 0;
   }
 
   @media (min-width: $xl) {
-    padding-top: 178px;
+    width: auto;
+    padding-top: 173px;
   }
 
   &::before,
@@ -70,9 +75,9 @@
 .questions__list-wrapper {
   @media (min-width: $xl) {
     position: relative;
-    margin-top: 86px;
-    margin-bottom: 100px;
-    min-height: 313px;
+    margin-top: 83px;
+    margin-bottom: 10px;
+    min-height: 400px;
     background-image: repeating-linear-gradient(to bottom, rgba($white, 0.05) 0, rgba($white, 0.05) 2px, transparent 2px, transparent 100px);
     overflow-x: hidden;
   }
@@ -81,7 +86,7 @@
 .questions__line-decorate {
   @media (min-width: $xl) {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: -174px;
     width: 1538px;
     height: 374px;
@@ -96,11 +101,11 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
-  padding-top: 50px;
+  padding-top: 40px;
   list-style: none;
 
   @media (min-width: $md) {
-    max-width: 685px;
+    max-width: 645px;
     margin: 0;
     padding-bottom: 65px;
     columns: 2;
@@ -118,10 +123,11 @@
 .questions__item {
   display: flex;
   margin-left: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 
   @media (min-width: $md) {
     width: 250px;
+    margin-bottom: 18px;
     margin-left: 68px;
     padding-top: 30px;
     page-break-inside: avoid;
@@ -131,36 +137,40 @@
     flex-direction: column;
     margin-left: 0;
     margin-bottom: 0;
+    padding-top: 35px;
   }
 
   &:nth-child(2) {
     @media (min-width: $xl) {
       width: 287px;
       margin-top: 35px;
-      margin-left: 108px;
+      margin-left: 112px;
     }
   }
 
   &:nth-child(3) {
     @media (min-width: $xl) {
       width: 190px;
-      margin-top: 130px;
-      margin-left: -30px;
+      margin-top: 132px;
+      margin-left: -25px;
     }
   }
 
   &:nth-child(4) {
     @media (min-width: $xl) {
       width: 160px;
-      margin-top: 42px;
-      margin-left: 20px;
+      margin-top: 34px;
+      margin-left: 82px;
     }
   }
 
   &:nth-child(5) {
     @media (min-width: $xl) {
+      width: 175px;
       margin-top: 10px;
-      margin-left: 63px;
+      margin-left: 62px;
+      padding-top: 24px;
+      padding-left: 10px;
     }
   }
 }
@@ -216,31 +226,31 @@
 
   &--one {
     @media (min-width: $xl) {
-      margin-top: 65px;
+      margin-top: 80px;
     }
   }
 
   &--two {
     @media (min-width: $xl) {
-      margin-top: 60px;
+      margin-top: 73px;
     }
   }
 
   &--three {
     @media (min-width: $xl) {
-      margin-top: 55px;
+      margin-top: 70px;
     }
   }
 
   &--four {
     @media (min-width: $xl) {
-      margin-top: 125px;
+      margin-top: 70px;
     }
   }
 
   &--five {
     @media (min-width: $xl) {
-      margin-top: 28px;
+      margin-top: 68px;
     }
   }
 }

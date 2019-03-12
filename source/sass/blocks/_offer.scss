@@ -1,13 +1,13 @@
 .offer {
-  padding-top: 86px;
-  padding-bottom: 80px;
+  padding-top: 83px;
+  padding-bottom: 77px;
   text-align: center;
   background-image: url("../img/bg-rings-xs.png");
   background-repeat: no-repeat;
   background-position: center top;
 
   @media (min-width: $md) {
-    padding-top: 70px;
+    padding-top: 79px;
     padding-bottom: 172px;
     background-image: url("../img/bg-rings-md.png");
   }
@@ -40,10 +40,14 @@
 .offer__subtitle {
   @include text-style;
   margin: 0;
-  margin-top: 12px;
+  margin-top: 9px;
   color: $orange;
   text-shadow: $orange-text-shadow;
   text-transform: uppercase;
+
+  @media (min-width: $md) {
+    margin-top: 15px;
+  }
 
   @media (min-width: $xl) {
     font-size: 18px;
@@ -54,16 +58,16 @@
 .offer__descr {
   position: relative;
   margin: 0;
-  margin-top: 36px;
+  margin-top: 28px;
 
   @include text-style;
 
   @media (min-width: $md) {
-    margin-top: 70px;
+    margin-top: 59px;
   }
 
   @media (min-width: $xl) {
-    margin-top: 80px;
+    margin-top: 74px;
     font-size: 18px;
     letter-spacing: 0.9px;
   }
@@ -71,19 +75,28 @@
   &::before {
     content: "";
     position: absolute;
-    top: -20px;
+    top: -15px;
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
     height: 2px;
     background-color: #242930;
+
+    @media (min-width: $md) {
+      top: -32px;
+    }
+
+    @media (min-width: $xl) {
+      top: -40px;
+    }
   }
 }
 
 .offer__form {
-  margin-top: 42px;
+  margin-top: 36px;
 
   @media (min-width: $md) {
-    margin: 45px auto 0;
+    max-width: 570px;
+    margin: 44px auto 0;
   }
 }
