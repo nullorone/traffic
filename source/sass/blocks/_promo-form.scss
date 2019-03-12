@@ -1,15 +1,16 @@
 .promo-form {
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 24px;
 
   @media (min-width: $md) {
     display: flex;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 48px;
   }
 
   @media (min-width: $xl) {
+    max-width: 570px;
     margin-top: 63px;
   }
 }

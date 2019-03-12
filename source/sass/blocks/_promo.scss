@@ -1,16 +1,16 @@
 .promo {
-  padding-top: 33px;
+  padding-top: 25px;
   text-align: center;
 
   @media (min-width: $md) {
     display: flex;
     flex-direction: column;
-    padding-top: 79px;
+    padding-top: 65px;
     text-align: left;
   }
 
   @media (min-width: $xl) {
-    padding-top: 102px;
+    padding-top: 88px;
   }
 }
 
@@ -30,6 +30,7 @@
   padding-top: 10px;
 
   @include h2-style;
+  font-size: 19px;
 
   @media (min-width: $md) {
     max-width: 425px;
@@ -41,6 +42,7 @@
 
   @media (min-width: $xl) {
     max-width: 590px;
+    padding-top: 6px;
     font-size: 40px;
     line-height: 52px;
     letter-spacing: 2px;
@@ -60,7 +62,7 @@
 
 .promo__descr {
   margin: 0;
-  padding-top: 13px;
+  padding-top: 7px;
 
   @include text-style;
 
@@ -70,7 +72,7 @@
 
   @media (min-width: $xl) {
     max-width: 360px;
-    padding-top: 20px;
+    padding-top: 13px;
     font-size: 18px;
     letter-spacing: 0.9px;
   }
@@ -81,7 +83,7 @@
 
   @media (min-width: $md) {
     position: absolute;
-    top: 88px;
+    top: 77px;
     right: -38px;
   }
 
@@ -122,10 +124,15 @@
 
 .promo__img {
   display: block;
+  margin-top: -8px;
   margin-left: 42px;
 
   @media (min-width: $md) {
     margin-left: 0;
+  }
+
+  @media (min-width: $xl) {
+    margin-top: 0;
   }
 }
 

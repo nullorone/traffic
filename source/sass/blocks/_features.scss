@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $xl) {
-    margin-top: -35px;
+    margin-top: -23px;
     padding-top: 0;
   }
 }
@@ -18,6 +18,12 @@
 
   @media (min-width: $md) {
     display: flex;
+    width: 730px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $xl) {
+    width: auto;
   }
 }
 
@@ -96,7 +102,7 @@
 
 .features__title {
   margin: 0;
-  margin-top: 28px;
+  margin-top: 21px;
   font-size: $global-font-size;
   font-weight: 400;
   line-height: 20px;
@@ -110,7 +116,7 @@
 
   &--last-item {
     @media (min-width: $md) {
-      margin-top: 20px;
+      margin-top: 15px;
     }
   }
 }
@@ -118,7 +124,7 @@
 .features__descr {
   max-width: 185px;
   margin: 0 auto;
-  margin-top: 18px;
+  margin-top: 9px;
   color: $light-white;
   font-size: $global-font-size;
   line-height: 20px;
@@ -138,7 +144,7 @@
 
     @media (min-width: $md) {
       margin: 0;
-      margin-top: 18px;
+      margin-top: 10px;
     }
   }
 }

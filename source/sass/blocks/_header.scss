@@ -4,15 +4,11 @@
 
   @media (min-width: $md) {
     padding-top: 63px;
-    padding-bottom: 110px;
+    padding-bottom: 118px;
   }
 
   @media (min-width: $xl) {
-    padding-bottom: 255px;
-  }
-
-  @media (min-width: 1280px) {
-    // overflow-x: inherit;
+    padding-bottom: 260px;
   }
 }
 
