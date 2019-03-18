@@ -6,6 +6,12 @@
   background-image: url("../img/bg-rings-xs.png");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-rings-xs@2x.png");
+  }
 
   @media (min-width: $md) {
     min-height: 666px;
@@ -14,11 +20,21 @@
     background-image: url("../img/bg-rings-md.png");
   }
 
+  @media (min-width: $md) and (min-resolution: 144dpi),
+    (min-width: $md) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-rings-md@2x.png");
+  }
+
   @media (min-width: $xl) {
     min-height: 839px;
     padding-top: 155px;
     padding-bottom: 240px;
     background-image: url("../img/bg-rings-xl.png");
+  }
+
+  @media (min-width: $xl) and (min-resolution: 144dpi),
+    (min-width: $xl) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-rings-xl@2x.png");
   }
 }
 

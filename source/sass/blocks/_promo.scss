@@ -103,7 +103,13 @@
     background-image: url("../img/bg-rings-header-xs.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-rings-header-xs@2x.png");
+    }
 
     @media (min-width: $md) {
       width: 516px;
@@ -113,11 +119,21 @@
       background-image: url("../img/bg-rings-header-md.png");
     }
 
+    @media (min-width: $md) and (min-resolution: 144dpi),
+      (min-width: $md) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-rings-header-md@2x.png");
+    }
+
     @media (min-width: $xl) {
       width: 859px;
       height: 844px;
       top: -40px;
       background-image: url("../img/bg-rings-header-xl.png");
+    }
+
+    @media (min-width: $xl) and (min-resolution: 144dpi),
+      (min-width: $xl) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-rings-header-xl@2x.png");
     }
   }
 }
