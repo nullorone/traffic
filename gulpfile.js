@@ -86,7 +86,7 @@ gulp.task("clear", function() {
 
 gulp.task("imagemin", function() {
   return gulp
-    .src("source/img/*.{jpg,svg}")
+    .src("source/img/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.jpegtran({ progressive: true }),
       imagemin.optipng({optimizationLevel: 5}),
