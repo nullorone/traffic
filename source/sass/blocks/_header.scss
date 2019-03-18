@@ -1,13 +1,16 @@
 .header {
+  min-height: 627px;
   padding-top: 33px;
   overflow-x: hidden;
 
   @media (min-width: $md) {
+    min-height: 548px;
     padding-top: 63px;
     padding-bottom: 118px;
   }
 
   @media (min-width: $xl) {
+    min-height: 762px;
     padding-bottom: 260px;
   }
 }
