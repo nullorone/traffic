@@ -1,4 +1,5 @@
 .offer {
+  min-height: 546px;
   padding-top: 83px;
   padding-bottom: 77px;
   text-align: center;
@@ -7,12 +8,14 @@
   background-position: center top;
 
   @media (min-width: $md) {
+    min-height: 666px;
     padding-top: 79px;
     padding-bottom: 172px;
     background-image: url("../img/bg-rings-md.png");
   }
 
   @media (min-width: $xl) {
+    min-height: 839px;
     padding-top: 155px;
     padding-bottom: 240px;
     background-image: url("../img/bg-rings-xl.png");

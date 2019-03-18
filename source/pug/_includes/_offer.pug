@@ -3,20 +3,8 @@ section.offer
     h2.offer__title Скачай видеокурс сейчас
     p.offer__subtitle и получи крутой бонус совершенно бесплатно!
     p.offer__descr Предложение ограничено! Успей!
-    ul.offer-form__timer.timer
-      li.timer__item
-        input.timer__input.timer__input--blocked(type="text", name="timer-days", id="timer-days", value="0", readonly)
-        label.timer__label(for="timer-days") дней
-      li.timer__item
-        input.timer__input(type="text", name="timer-hours", id="timer-hours", value="9", readonly)
-        label.timer__label(for="timer-hours") часов
-      li.timer__item
-        input.timer__input(type="text", name="timer-minutes", id="timer-minutes", value="34", readonly)
-        label.timer__label(for="timer-minutes") минут
-      li.timer__item
-        input.timer__input(type="text", name="timer-seconds", id="timer-seconds", value="11", readonly)
-        label.timer__label(for="timer-seconds") секунд
+    div.countdown-wrapper
     form.offer__form.promo-form(action="https://echo.htmlacademy.ru", method="POST")
           label.promo-form__label.visually-hidden(for="promo-email") Введите свой email
-          input.promo-form__input.promo-form__input--offer(type="email", name="promo-email", id="promo-email", placeholder="введите ваш e-mail")
+          input.promo-form__input.promo-form__input--offer(type="email", name="promo-email", id="promo-email", placeholder="введите ваш e-mail", required)
           button.promo-form__submit(type="submit") Скачать видео курс

@@ -108,15 +108,28 @@ gulp.task("copy:fonts", function() {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("copy:css", function() {
+  return gulp
+    .src(["source/css/libs/*.css"], { base: "source" })
+    .pipe(gulp.dest("build"));
+});
+
+
 gulp.task("copy:pixel-glass", function() {
   return gulp
-    .src(["source/pixel-glass/**/*.*"], { base: "source" })
-    .pipe(gulp.dest("build"));
+  .src(["source/pixel-glass/**/*.*"], { base: "source" })
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("copy:img", function() {
   return gulp
-    .src(["source/img/**/*.{jpg,png,svg}"], { base: "source" })
+  .src(["source/img/**/*.{jpg,png,svg}"], { base: "source" })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("copy:js", function() {
+  return gulp
+    .src(["source/js/libs/*.js"], { base: "source" })
     .pipe(gulp.dest("build"));
 });
 
@@ -156,7 +169,6 @@ gulp.task("server", function() {
 
   gulp.watch("source/pug/**/*.pug", gulp.series("pug", "html"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  // gulp.watch("source/*.html", gulp.series("html"));
   gulp.watch("source/js/*.js", gulp.series("js"));
 });
 
@@ -165,6 +177,8 @@ gulp.task(
   gulp.series(
     "clear",
     "copy:fonts",
+    "copy:css",
+    "copy:js",
     "copy:pixel-glass",
     "dev-img",
     "css",
@@ -180,6 +194,8 @@ gulp.task(
   gulp.series(
     "clear",
     "copy:fonts",
+    "copy:css",
+    "copy:js",
     "image-optimize",
     "css",
     "pug",

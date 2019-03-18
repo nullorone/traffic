@@ -1,4 +1,4 @@
-.timer {
+.countdown {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -12,7 +12,7 @@
   }
 }
 
-.timer__item {
+.countdown__item {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -48,7 +48,7 @@
   }
 }
 
-.timer__input {
+.countdown__input {
   padding-bottom: 5px;
   color: $white;
   font-family: $global-font-family;
@@ -73,7 +73,7 @@
   }
 }
 
-.timer__label {
+.countdown__label {
   margin-top: 10px;
   color: $light-white;
   font-size: 12px;
